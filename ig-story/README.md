@@ -8,6 +8,8 @@
 - `d1-editorial.html`：雜誌風，大圖＋英文襯線字＋三張小圖
 - `d2-split.html`：上下兩張滿版，中間一個標題
 - `d3-rain.html`：一張雨衣照滿版＋一句話
+- `e1-credencial.html`：朝聖者護照，每天一個蓋章＋照片貼在格子上
+- `e2-flecha.html`：Camino 藍底、黃色貝殼、手刷黃箭頭、公里石碑
 - `c4-dark.html`：IG 原生風格 4：黑底、白邊照片、粗斜體 WEEK 1
 
 ## 換成原圖

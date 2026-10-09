@@ -1,0 +1,89 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>Camino Week 01 — Credencial</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Caveat:wght@600&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+.story{position:relative;width:1080px;height:1920px;background:#efe6d2;color:#2a2620;overflow:hidden}
+.paper{position:absolute;inset:0;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3'/><feColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .3 0 0 0 .45 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.fold{position:absolute;left:0;right:0;top:1060px;height:2px;background:linear-gradient(90deg,transparent,rgba(120,95,60,.25),transparent)}
+.abs{position:absolute}
+.head{left:70px;right:70px;top:200px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px double #6a5a44;padding-bottom:18px}
+.head h1{font:900 64px/1.1 'Noto Serif TC',serif}
+.head small{display:block;font:700 24px/1 'Oswald';letter-spacing:.2em;color:#7a6a52;margin-bottom:10px}
+.grid{left:70px;top:330px;width:940px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:2px solid #8a7a62;border-top:2px solid #8a7a62}
+.cell{position:relative;height:300px;border-right:2px solid #8a7a62;border-bottom:2px solid #8a7a62}
+.cell .n{position:absolute;left:10px;top:8px;font:500 18px/1 'Oswald';color:#9a8a70}
+.cell .hw{position:absolute;right:14px;bottom:10px;font:600 40px/1 'Caveat';color:#2b3b7a;transform:rotate(-6deg)}
+.cell svg{position:absolute;left:50%;top:50%}
+.ph{position:absolute;background:#fbf8f1;padding:12px;box-shadow:0 2px 3px rgba(0,0,0,.15),0 14px 24px -12px rgba(50,30,10,.45)}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.tape{position:absolute;width:130px;height:40px;background:rgba(230,215,180,.8);z-index:3}
+.note{font:400 38px/1.45 'LXGW WenKai TC',serif;color:#2b3b7a}
+</style></head><body><div class="story"><div class="paper"></div><div class="fold"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3" result="w"/>
+    <feDisplacementMap in="SourceGraphic" in2="w" scale="5" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="8" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -3 0 0 0 2.25" result="m"/>
+    <feComposite in="d" in2="m" operator="in"/>
+  </filter>
+  <g id="shell"><path d="M0 34 L-34 -14 M0 34 L-22 -26 M0 34 L-8 -32 M0 34 L8 -32 M0 34 L22 -26 M0 34 L34 -14 M0 34 L-38 2 M0 34 L38 2" stroke-width="6" stroke-linecap="round" fill="none"/></g>
+</defs></svg>
+
+<div class="abs head"><div><small>CREDENCIAL DEL PEREGRINO</small><h1>朝聖者護照・第一週</h1></div>
+  <div style="font:600 46px/1 'Caveat';color:#2b3b7a;transform:rotate(-4deg)">10/2 – 10/8</div></div>
+
+<div class="abs grid" id="grid"></div>
+
+<div class="ph" style="left:420px;top:690px;width:600px;height:460px;transform:rotate(3.5deg);z-index:2">
+  <div class="tape" style="left:180px;top:-22px;transform:rotate(-3deg)"></div><img src="photos/1005-pyrenees-hd.jpg"></div>
+<div class="ph" style="left:50px;top:1110px;width:440px;height:340px;transform:rotate(-4deg);z-index:2">
+  <div class="tape" style="left:-36px;top:10px;transform:rotate(-40deg)"></div><img src="photos/dinner.jpg"></div>
+<div class="ph" style="left:640px;top:1230px;width:340px;height:450px;transform:rotate(3deg);z-index:2">
+  <div class="tape" style="right:-34px;top:6px;transform:rotate(38deg)"></div><img src="photos/1006-rain.jpg" style="object-position:40% 60%"></div>
+
+<div class="abs note" style="left:80px;top:1530px;transform:rotate(-2deg);z-index:4">47 km，蓋了 4 個章。<br>剩下的格子，慢慢走。🐚</div>
+<div class="abs" style="left:80px;top:1700px;font:700 24px/1 'Oswald';letter-spacing:.25em;color:#7a6a52;z-index:4">BUEN CAMINO ↗ PAMPLONA</div>
+
+<script>
+const S=[ // town, date, ink, shape
+ ['SAINT-JEAN-PIED-DE-PORT','10/3','#27489a','circle','PÈLERIN · 2026'],
+ ['ORISSON','10/4','#6b3f8f','rect','REFUGE · 800 M'],
+ ['RONCESVALLES','10/5','#a8322b','oval','NAVARRA'],
+ ['ZUBIRI','10/6','#2c6a4b','circle','PUENTE DE LA RABIA'],
+ ['',''],['',''],['',''],['',''],['',''],['',''],['',''],['','']];
+const g=document.getElementById('grid');
+S.forEach((s,i)=>{
+  const c=document.createElement('div');c.className='cell';
+  c.innerHTML=`<span class="n">${String(i+1).padStart(2,'0')}</span>`;
+  if(s[0]){
+    const [t,d,ink,shape,sub]=s, id='p'+i, rot=[-12,8,-5,14][i];
+    let body='';
+    if(shape==='circle'){
+      body=`<circle r="108" fill="none" stroke-width="6"/><circle r="72" fill="none" stroke-width="3"/>
+       <path id="${id}" d="M-90 0 A90 90 0 1 1 90 0" fill="none" stroke="none"/>
+       <path id="${id}b" d="M-90 0 A90 90 0 0 0 90 0" fill="none" stroke="none"/>
+       <text font-family="Oswald" font-weight="700" font-size="${t.length>14?17:20}" dy="-2" letter-spacing="2" stroke="none"><textPath href="#${id}" startOffset="50%" text-anchor="middle">${t}</textPath></text>
+       <text font-family="Oswald" font-weight="500" font-size="15" letter-spacing="2" stroke="none" dy="12"><textPath href="#${id}b" startOffset="50%" text-anchor="middle">${sub}</textPath></text>
+       <use href="#shell" transform="translate(0,-6) scale(1.2)" fill="none"/>`;
+    }else if(shape==='rect'){
+      body=`<rect x="-118" y="-78" width="236" height="156" rx="10" fill="none" stroke-width="6"/><rect x="-104" y="-64" width="208" height="128" rx="4" fill="none" stroke-width="2"/>
+       <path d="M-70 30 L-30 -20 L-5 10 L20 -30 L70 30 Z" fill="none" stroke-width="5" stroke-linejoin="round"/>
+       <text y="-36" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="30" letter-spacing="4" stroke="none">${t}</text>
+       <text y="56" text-anchor="middle" font-family="Oswald" font-weight="500" font-size="16" letter-spacing="3" stroke="none">${sub}</text>`;
+    }else{
+      body=`<ellipse rx="122" ry="88" fill="none" stroke-width="6"/>
+       <text y="-30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="25" letter-spacing="2" stroke="none">${t}</text>
+       <path d="M0 -12 V50 M-20 8 H20" stroke-width="7" fill="none"/>
+       <text y="74" text-anchor="middle" font-family="Oswald" font-weight="500" font-size="15" letter-spacing="3" stroke="none">${sub}</text>`;
+    }
+    c.innerHTML+=`<svg width="280" height="280" viewBox="-140 -140 280 280" style="transform:translate(-50%,-50%) rotate(${rot}deg);opacity:.86">
+      <g filter="url(#ink)" stroke="${ink}" fill="${ink}">${body}</g></svg>`;
+  }
+  if(s[1]) c.innerHTML+=`<span class="hw">${s[1]}</span>`;
+  g.appendChild(c);
+});
+</script>
+</div></body></html>

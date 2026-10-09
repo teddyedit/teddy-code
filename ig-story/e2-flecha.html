@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><title>Camino Week 01 — Flecha</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ig-common.css">
+<style>
+.story{background:#1c4b8f;color:#fff}
+.wall{position:absolute;inset:0;opacity:.3;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='4'/><feColorMatrix values='0 0 0 0 .1 0 0 0 0 .15 0 0 0 0 .3 0 0 0 .6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.y{color:#f7c514}
+.ph{border:8px solid #fff;border-radius:6px;box-shadow:0 10px 24px rgba(0,0,0,.35)}
+</style></head><body><div class="story"><div class="wall"></div>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <filter id="paint" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="3" seed="5" result="w"/>
+    <feDisplacementMap in="SourceGraphic" in2="w" scale="9" result="d"/>
+    <feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="3" seed="2" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -0.9 0 0 0 1.4" result="m"/>
+    <feComposite in="d" in2="m" operator="in"/>
+  </filter>
+</defs></svg>
+
+<!-- Camino waymarker shell, cropped off the top-right corner -->
+<svg class="abs" style="right:-170px;top:-120px;opacity:.95" width="620" height="620" viewBox="-100 -100 200 200">
+  <g stroke="#f7c514" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M60 60 L-80 -10"/><path d="M60 60 L-62 -48"/><path d="M60 60 L-30 -76"/><path d="M60 60 L8 -84"/>
+    <path d="M60 60 L-84 30"/><path d="M60 60 L-74 64"/>
+  </g></svg>
+
+<div class="abs" style="left:70px;top:210px;font:700 26px/1 'Oswald';letter-spacing:.3em" class="y"><span class="y">CAMINO FRANCÉS</span></div>
+<div class="abs" style="left:66px;top:252px;font:900 92px/1.1 'Noto Sans TC'">第一週</div>
+<div class="abs" style="left:70px;top:362px;font:500 36px/1.4 'Noto Sans TC';opacity:.9">跟著黃色箭頭走 10/2–10/8</div>
+
+<div class="ph" style="left:70px;top:480px;width:640px;height:480px;transform:rotate(-2deg)"><img src="photos/1005-pyrenees-hd.jpg"></div>
+<div class="ph" style="left:640px;top:880px;width:370px;height:493px;transform:rotate(4deg)"><img src="photos/1006-rain.jpg" style="object-position:40% 60%"></div>
+<div class="ph" style="left:80px;top:1040px;width:520px;height:390px;transform:rotate(2deg)"><img src="photos/dinner.jpg"></div>
+
+<!-- painted yellow arrow -->
+<svg class="abs" style="left:60px;top:1470px" width="620" height="230" viewBox="0 0 620 230">
+  <g filter="url(#paint)" fill="#f7c514"><path d="M18 92 C150 84,320 86,432 90 L428 28 L604 124 L430 222 L434 160 C320 164,150 166,22 162 Z"/></g></svg>
+<div class="abs" style="left:110px;top:1571px;font:900 44px/1 'Noto Sans TC';color:#1c4b8f">Pamplona</div>
+
+<!-- mojón km marker -->
+<div class="abs" style="left:740px;top:1440px;width:240px;height:320px;background:linear-gradient(90deg,#b9b4aa,#d8d3c9 40%,#a9a49a);border-radius:10px 10px 0 0;box-shadow:0 10px 20px rgba(0,0,0,.35)">
+  <div style="margin:22px auto 0;width:150px;height:150px;background:#1c4b8f;border-radius:4px;display:grid;place-items:center">
+    <svg width="110" height="110" viewBox="-100 -100 200 200"><g stroke="#f7c514" stroke-width="16" stroke-linecap="round"><path d="M60 60 L-80 -10"/><path d="M60 60 L-62 -48"/><path d="M60 60 L-30 -76"/><path d="M60 60 L8 -84"/><path d="M60 60 L-84 30"/><path d="M60 60 L-74 64"/></g></svg></div>
+  <div style="text-align:center;margin-top:16px;font:700 54px/1 'Oswald';color:#2a2a2a">47 km</div>
+  <div style="text-align:center;margin-top:8px;font:500 24px/1 'Noto Sans TC';color:#555">已經走了</div>
+</div>
+<div class="abs txt" style="left:70px;top:1770px;font:700 34px/1 'Noto Sans TC'">Buen Camino 🐚</div>
+</div></body></html>
