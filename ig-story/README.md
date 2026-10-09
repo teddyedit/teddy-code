@@ -5,6 +5,9 @@
 - `c-ig.html`：IG 原生風格 1：純色底拼貼、白底字、地點貼紙
 - `c2-dump.html`：IG 原生風格 2：photo dump，大圖＋四宮格＋投票貼紙
 - `c3-fullbleed.html`：IG 原生風格 3：一張照片滿版，小照片貼紙＋表情滑桿貼紙
+- `d1-editorial.html`：雜誌風，大圖＋英文襯線字＋三張小圖
+- `d2-split.html`：上下兩張滿版，中間一個標題
+- `d3-rain.html`：一張雨衣照滿版＋一句話
 - `c4-dark.html`：IG 原生風格 4：黑底、白邊照片、粗斜體 WEEK 1
 
 ## 換成原圖
