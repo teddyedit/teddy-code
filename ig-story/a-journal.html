@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<title>Camino Week 01 — Journal</title>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Serif+TC:wght@600;900&family=Caveat:wght@500;700&family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#efe8dc;--ink:#2b2622;--rust:#b4532a;--muted:#8a7f72;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1920px;background:var(--paper);overflow:hidden}
+  .story{position:relative;width:1080px;height:1920px;color:var(--ink);
+    background:
+      radial-gradient(ellipse at 20% 10%,rgba(255,255,255,.55),transparent 55%),
+      radial-gradient(ellipse at 90% 95%,rgba(160,120,80,.12),transparent 60%),var(--paper);}
+  .grain{position:absolute;inset:0;opacity:.22;mix-blend-mode:multiply;pointer-events:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .33  0 0 0 0 .25  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");}
+  .abs{position:absolute}
+  /* header */
+  .kicker{left:84px;top:208px;font:400 30px/1 'Courier Prime',monospace;letter-spacing:.06em;color:var(--muted)}
+  .title{left:78px;top:250px;font:900 132px/1 'Noto Serif TC',serif;letter-spacing:.02em}
+  .sub{left:86px;top:404px;font:400 46px/1 'LXGW WenKai TC',serif;color:var(--rust);transform:rotate(-1.5deg)}
+  .wk{right:84px;top:226px;width:150px;height:150px;border:3px solid var(--rust);border-radius:50%;
+    color:var(--rust);display:grid;place-items:center;text-align:center;transform:rotate(12deg);
+    font:700 26px/1.15 'Courier Prime',monospace;opacity:.85}
+  .wk b{display:block;font:700 54px/1 'Noto Serif TC',serif}
+  /* photos */
+  .ph{background:#fbf9f4;padding:16px 16px 0;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 28px -10px rgba(60,40,20,.35)}
+  .ph img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.03) sepia(.06)}
+  .ph .frame{position:relative;overflow:hidden}
+  .ph .cap{font:400 36px/1 'LXGW WenKai TC',serif;padding:16px 4px 20px;display:flex;justify-content:space-between;align-items:baseline}
+  .ph .cap small{font:400 24px/1 'Courier Prime',monospace;color:var(--muted)}
+  .stamp{position:absolute;right:14px;bottom:10px;font:700 24px/1 'Courier Prime',monospace;color:#ff8a2a;
+    text-shadow:0 0 6px rgba(255,120,30,.8);letter-spacing:.04em;opacity:.95}
+  .tape{position:absolute;width:150px;height:44px;background:rgba(222,205,170,.78);
+    box-shadow:0 1px 2px rgba(0,0,0,.08);z-index:5}
+  .hero{left:76px;top:500px;width:928px;transform:rotate(-1.6deg)}
+  .hero .frame{height:340px}
+  .p1{left:58px;top:990px;width:320px;transform:rotate(-4deg)}
+  .p2{left:382px;top:1012px;width:320px;transform:rotate(2.5deg);z-index:2}
+  .p3{left:704px;top:984px;width:320px;transform:rotate(-1.2deg)}
+  .p1 .frame,.p2 .frame,.p3 .frame{height:190px}
+  .p1 .cap,.p2 .cap,.p3 .cap{font-size:32px;white-space:nowrap}
+  .p4{left:438px;top:1330px;width:580px;transform:rotate(2.8deg);z-index:3}
+  .p4 .frame{height:224px}
+  /* route + notes */
+  .route{left:76px;top:1580px;width:340px}
+  .route svg{overflow:visible}
+  .note{left:84px;top:1690px;font:400 54px/1.2 'Caveat',cursive;color:var(--ink);transform:rotate(-2deg)}
+  .note span{font-family:'LXGW WenKai TC',serif;font-size:42px}
+  .stats{left:84px;top:1350px;font:400 34px/1.5 'LXGW WenKai TC',serif;color:var(--ink)}
+  .stats b{font:700 64px/1 'Caveat',cursive;color:var(--rust);margin-right:6px}
+  .stats div{display:flex;align-items:baseline;gap:6px;margin-bottom:4px}
+  .stats i{font-style:normal;color:var(--muted);font-size:28px}
+</style></head><body>
+<div class="story">
+  <div class="abs kicker">CAMINO FRANCÉS · 2026.10.02—10.06</div>
+  <div class="abs title">朝聖之路</div>
+  <div class="abs sub">第一週，從巴黎走到 Zubiri</div>
+  <div class="abs wk"><div>WEEK<b>01</b></div></div>
+
+  <div class="abs ph hero">
+    <div class="tape" style="left:-30px;top:-14px;transform:rotate(-28deg)"></div>
+    <div class="tape" style="right:-34px;top:-10px;transform:rotate(24deg)"></div>
+    <div class="frame"><img src="photos/1005-pyrenees.jpg" style="object-position:50% 45%"><span class="stamp">'26 10 05</span></div>
+    <div class="cap">翻越庇里牛斯山，日出的時候 ☀︎<small>1,450 m</small></div>
+  </div>
+
+  <div class="abs ph p1"><div class="frame"><img src="photos/1002-paris.jpg"></div><div class="cap">巴黎出發<small>10/2</small></div></div>
+  <div class="abs ph p2">
+    <div class="tape" style="left:90px;top:-20px;transform:rotate(-4deg)"></div>
+    <div class="frame"><img src="photos/1003-sjpp.jpg"></div><div class="cap">SJPP 晚餐<small>10/3</small></div></div>
+  <div class="abs ph p3"><div class="frame"><img src="photos/1004-orisson.jpg"></div><div class="cap">Orisson<small>10/4</small></div></div>
+  <div class="abs ph p4">
+    <div class="tape" style="right:-30px;top:-8px;transform:rotate(32deg)"></div>
+    <div class="frame"><img src="photos/1006-zubiri.jpg" style="object-position:50% 40%"><span class="stamp">'26 10 06</span></div><div class="cap">牛牛陪我走到 Zubiri<small>10/6</small></div></div>
+
+  <div class="abs stats">
+    <div><b>47</b> km <i>走路</i></div>
+    <div><b>3</b> 天 <i>開走</i></div>
+    <div><b>€263</b> <i>總花費</i></div>
+  </div>
+  <div class="abs route">
+    <svg width="330" height="60" viewBox="0 0 330 60"><path d="M6 40 C60 10,110 52,165 30 S270 8,322 34" fill="none" stroke="#b4532a" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+    <circle cx="6" cy="40" r="7" fill="#2b2622"/><circle cx="322" cy="34" r="7" fill="none" stroke="#b4532a" stroke-width="3"/></svg>
+    <div style="display:flex;justify-content:space-between;width:340px;font:400 26px/1 'LXGW WenKai TC',serif;color:#8a7f72;margin-top:4px"><span>SJPP</span><span>Zubiri</span></div>
+  </div>
+  <div class="abs note">Buen Camino! <span>下一站 → Pamplona</span></div>
+  <div class="grain"></div>
+</div>
+</body></html>
